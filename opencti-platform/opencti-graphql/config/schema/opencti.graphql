@@ -207,6 +207,8 @@ type Number {
 ############## Logs
 type LogsWorkerConfig {
   elasticsearch_url: String!
+  elasticsearch_username: String
+  elasticsearch_password: String
   elasticsearch_index: String!
 }
 enum LogsOrdering {

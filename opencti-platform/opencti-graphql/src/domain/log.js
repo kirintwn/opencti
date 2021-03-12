@@ -44,5 +44,7 @@ export const logsTimeSeries = (user, args) => {
 
 export const logsWorkerConfig = () => ({
   elasticsearch_url: conf.get('elasticsearch:url'),
+  elasticsearch_username: conf.get('elasticsearch:username') || null,
+  elasticsearch_password: conf.get('elasticsearch:password') || null,
   elasticsearch_index: INDEX_HISTORY,
 });
